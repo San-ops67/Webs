@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje Webové Projekty</title>
+    <style>
+        /* Základní nastavení vzhledu */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 40px;
+        }
+
+        /* Mřížka pro projekty */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Vzhled karty projektu */
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .project-desc {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        /* Tlačítko */
+        .btn {
+            background-color: #0969da; /* GitHub modrá */
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #064fa3;
+        }
+
+        footer {
+            margin-top: 50px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Vítejte v mém portfoliu 👋</h1>
+        <p>Zde najdete ukázky mých webových stránek.</p>
+        <br>
+    </header>
+
+    <div class="portfolio-grid">
+
+        <div class="project-card">
+            <div>
+                <h2 class="project-title">Název prvního webu</h2>
+                <p class="project-desc">Krátký popis toho, o čem tento web je. Například: Školní projekt o psech vytvořený v HTML a CSS.</p>
+            </div>
+            <a href="nazev-slozky-1/" class="btn">Otevřít web</a>
+        </div>
+
+        <div class="project-card">
+            <div>
+                <h2 class="project-title">Název druhého webu</h2>
+                <p class="project-desc">Zde můžeš popsat, jaké technologie jsi použil nebo co ses na tomto projektu naučil.</p>
+            </div>
+            <a href="nazev-slozky-2/" class="btn">Otevřít web</a>
+        </div>
+
+        <div class="project-card">
+            <div>
+                <h2 class="project-title">Další projekt</h2>
+                <p class="project-desc">Místo pro tvůj další budoucí projekt.</p>
+            </div>
+            <a href="#" class="btn">Připravuje se...</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Vytvořeno a hostováno na GitHub Pages</p>
+    </footer>
+
+</body>
+</html>
